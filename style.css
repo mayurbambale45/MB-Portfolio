@@ -446,10 +446,10 @@ a{
 }
 
 #project1 {
-  background-image: url(./project1bg.png);
+  background-image: url(project1bg.png);
 }
 #project2 {
-  background-image: url(./project2bg.png);
+  background-image: url(project2bg.png);
   margin-left: 120px;
 }
 
