@@ -1,254 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mayur Bambale</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayur Bambale | Portfolio</title>
+    <meta name="description" content="Portfolio of Mayur Bambale - Web Developer & Designer">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    
+    <!-- Favicon (Optional) -->
+    <!-- <link rel="icon" href="assets/logo.jpg"> -->
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="assets/logo_optimized.jpg" alt="Logo" width="40" height="40">
+                <span>Mayur Bambale</span>
+            </a>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container hero-content">
+            <div class="hero-left hero-text">
+                <h3>Hello, I am</h3>
+                <h1>Mayur Bambale</h1>
+                <h2><span class="highlight typed-text"></span></h2>
+                <p>
+                    I design and build digital experiences that are fast, accessible, and visually stunning. 
+                    Let's turn your ideas into reality.
+                </p>
+                <div class="cta-group">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Hire Me
+                    </a>
+                    <a href="assets/Mayur_Bambale_CSE_CV.pdf" download="Mayur_Bambale_Resume" class="btn btn-secondary">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </div>
+            </div>
+            <div class="hero-right hero-image">
+                <div class="img-wrapper">
+                    <img src="assets/mayur_optimized.jpg" alt="Mayur Bambale" width="400" height="500" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">Get to know me better</p>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I am a <strong>Computer Science Engineering</strong> student at Walchand College of Engineering, Sangli. 
+                        My journey in tech started with a curiosity for how things work on the web, which led me to become a 
+                        passionate Web Developer.
+                    </p>
+                    <p>
+                        I specialize in building responsive, user-centric websites and applications. 
+                        I love solving complex problems and learning new technologies. When I'm not coding, 
+                        you can find me exploring new places or learning about the latest tech trends.
+                    </p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3>02+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>10+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>05+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
  
 
-  <link rel="stylesheet" href="style.css" />
-</head>
+    <!-- Experience Section (New) -->
+    <section class="section" id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <p class="section-subtitle">My professional journey</p>
 
-<body>
-  <!-- Navbar -->
-  <nav class="navbar container">
-      <!-- Logo -->
-      <div class="logo-group">
-        <img class="nav-logo" src="./logo.jpg" alt="" />
-        <h2 class="nav-logo-text">ayur Bambale</h2>
-      </div>
+            <div class="timeline">
+                <!-- Example Experience Item -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023 - Present</span>
+                        <h3 class="timeline-title">Freelance Web Developer</h3>
+                        <p class="timeline-subtitle">Remote</p>
+                        <p class="timeline-desc">
+                            Developing custom websites for clients using HTML, CSS, JavaScript, Tailwind CSS and PERN Stack(Postgre, Express, React, Node).
+                            Ensuring high performance and responsive design across all devices.
+                        </p>
+                    </div>
+                </div>
 
-      <!-- Nav Items -->
-      <div class="nav-items">
-        <div><a href="#about">About Me</a></div>
-        <div><a href="#projects">Projects</a></div>
-        <div><a href="#skills">Skills</a></div>
-        <div><a href="#contactme">Contact Me</a></div>
-      </div>
-  </nav>
-
-  <!-- About me Section -->
-
-  <div class="hero-section container" id="about">
-    <div class="absolute faded-text">Mayur Bambale</div>
-    <!-- Left Section -->
-    <div class="hero-section-left">
-      <!-- Heading -->
-      <div class="hero-section-heading">Hi! Mayur Bambale</div>
-      <div class="hero-section-heading herosection-sub-heading">
-        I am a <span class="role"></span>
-      </div>
-
-      <!-- Description -->
-      <div class="hero-section-description">
-        I’m a Web developer and here is my portfolio website. Here you’ll
-        learn about my journey as a Web developer.
-      </div>
-
-      <!-- CTA Button -->
-      <div class="btn-pink" id="btn-top">Hire me</div>
-    </div>
-
-    <!-- Right Section -->
-    <div class="hero-section-right">
-
-      <div class="user-image">
-        <img src="./mayur.JPG" alt="" width="345" height="390" />
-      </div>
-    </div>
-
-    <div class="btn-pink" id="btn-bottom">Hire me</div>
-  </div>
-
-  <!-- Projects -->
-
-  <section id="projects" class="projects">
-    <h2 class="page-header">Projects</h2>
-    <div class="project-container">
-
-      <div class="project-card" id="project1">
-        <div class="project-number project-number-left">01</div>
-        <div class="project-content project-content-left">
-         
-          <h2 class="project-heading">Travel Planner Website</h2>
-          <p class="project-sub-heading">
-            Its is a Travel planer website which provide you interface to choose your interested Destinations.
-          </p>
-          <div class="btn-group">
-            <button class="btn-pink btn-project">Read More</button>
-            <a href="">
-              <i title="GitHubLink" class="fa-brands fa-github icon"></i>
-            </a>
-            <a href="">
-              <i title="Live Link" class="fa-solid fa-link icon"></i>
-            </a>
-          </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025 - 2026</span>
+                        <h3 class="timeline-title">Developer</h3>
+                        <p class="timeline-subtitle">Mini Project</p>
+                        <p class="timeline-desc">
+                            Collaborated with other team members to build AgriAssist - The  Farmer Advisory System Application.
+                            Using Next.js framework for frontend and python, flask for backend with ML Model for core Logic.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
 
-      <div class="project-card" id="project2">
-        <div class="project-number project-number-right">02</div>
-        <div class="project-content project-content-right">
-         
-          <h2 class="project-heading">Top-Cources </h2>
-          <p class="project-sub-heading">
-            A platform to purchase Cources Online for learning.
-          </p>
-          <div class="btn-group">
-            <button class="btn-pink btn-project">Read More</button>
-            <a href="">
-              <i title="GitHubLink" class="fa-brands fa-github icon"></i>
-            </a>
-            <a href="">
-              <i title="Live Link" class="fa-solid fa-link icon"></i>
-            </a>
-          </div>
+    <!-- Education Section (New) -->
+    <section class="section" id="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <p class="section-subtitle">My academic background</p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023 - present</span>
+                        <h3 class="timeline-title">B.Tech in Computer Science and Engineering</h3>
+                        <p class="timeline-subtitle">Walchand College of Engineering, Sangli</p>
+                        <p class="timeline-desc">
+                            Ex-member of WCE ACM Student Chapter and WCE PACE (2023-2025).
+                        </p>
+                    </div>
+                </div>
+                 <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2021 - 2023</span>
+                        <h3 class="timeline-title">Higher Secondary Education</h3>
+                        <p class="timeline-subtitle">Science Stream</p>
+                        <p class="timeline-desc">
+                            Focused on PCMB group and secured distinction with first class in board exam.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2020 - 2021</span>
+                        <h3 class="timeline-title">Secondary Education</h3>
+                        <p class="timeline-subtitle">Science Stream</p>
+                        <p class="timeline-desc">
+                            Secured distinction with first class in board exam.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
 
-      
-    </div>
-  </section>
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <p class="section-subtitle">Technologes I work with</p>
 
-  <!-- Skills -->
-
-  <div id="skills" class="container skills-container">
-    <div class="absolute skill-fade-text">Skills</div>
-    <!-- Left Section -->
-    <div class="skill-container-left">
-      <h2 class="skill-heading">
-        <span class="caps">M</span>e and
-        <br />
-        MyTech Stack
-      </h2>
-      <div class="skill-subHeading">
-        <p>
-          Hi Everyone My name is Mayur Bambale. pursuing B.tech from Walchand College of Enginnering, Sangli. from CSE branch. I come from
-          Sangmner Dist. Ahmednagar. I am tech enthusiastic, Quick learner, Travel
-          Lover
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non
-          doloremque aspernatur, maiores voluptatum minus laudantium?
-          Perspiciatis accusamus minima porro dolores necessitatibus, magni
-          dolorem et qui veniam nulla sequi molestiae maxime.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quidem
-          quos ullam veritatis voluptates tenetur qui ipsa nulla culpa itaque?
-        </p>
-      </div>
-    </div>
-
-    <!-- Right Section -->
-
-    <div class="skill-container-right">
-      <img src="./images/userAsset/blob vector.png" class="blob-style" alt="" />
-
-      <img src="./images/stack/HTML.png" alt="" class="skills-logo" />
-      <img src="./images/stack/CSS.png" alt="" class="skills-logo" />
-      <img src="./images/stack/Javascript.svg" alt="" class="skills-logo" />
-      <img src="./images/stack/React.png" alt="" class="skills-logo" />
-      <img src="./images/stack/NodeJs.svg" alt="" class="skills-logo" />
-      <img src="./images/stack/Next.svg" alt="" class="skills-logo" />
-      <img src="./images/stack/Redux.svg" alt="" class="skills-logo" />
-      <img src="./images/stack/Tailwind.png" alt="" class="skills-logo" />
-      <img src="./images/stack/Bootstrap.svg" alt="" class="skills-logo" />
-      <img src="./images/stack/MaterialUI.svg" alt="" class="skills-logo" />
-      <img src="./images/stack/Express.png" alt="" class="skills-logo" />
-      <img src="./images/stack/Git.svg" alt="" class="skills-logo" />
-      <img src="./images/stack/Github.svg" alt="" class="skills-logo" />
-      <img src="./images/stack/Graphql.svg" alt="" class="skills-logo" />
-      <img src="./images/stack/MongoDB.svg" alt="" class="skills-logo" />
-      <img src="./images/stack/Vercel.svg" alt="" class="skills-logo" />
-      <img src="./images/stack/ChartJs.svg" alt="" class="skills-logo" />
-      <img src="./images/stack/Bash.svg" alt="" class="skills-logo" />
-      <img src="./images/stack/Docker.svg" alt="" class="skills-logo" />
-      <img src="./images/stack/K8s.svg" alt="" class="skills-logo" />
-    </div>
-  </div>
-
-  <!-- Contact Us -->
-  <div id="contactme" class="contactus-container">
-    <div class="container">
-      <h1 class="contactus-heading">Contact Me</h1>
-      <h3 class="contactus-sub-heading">
-        Questions, thoughts, or just want to say hello?
-      </h3>
-
-      <div class="contactus-form-container">
-        <form class="form" action="https://formspree.io/f/mlekrnnl" method="post">
-          <div class="formfield-container">
-            <input class="formfield" type="text" name="name" id="" placeholder="Enter your name" />
-          </div>
-          <div class="formfield-container">
-            <input class="formfield" type="email" name="email" id="" placeholder="Enter your email address" />
-          </div>
-          <div class="formfield-container">
-            <input class="formfield" type="text" name="subject" id="" placeholder="Enter your subject" />
-          </div>
-          <div class="formfield-container">
-            <textarea name="message" id="" cols="30" rows="10" class="formfield formfield-textarea"
-              placeholder="Enter your message"></textarea>
-          </div>
-          <div>
-            <button type="submit" class="btn-pink" id="submit-btn">
-              Send Message<i class="submit-icon fa-solid fa-paper-plane"></i>
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container footer-wrapper">
-      <div class="footer-faded-text">Mayur Bambale</div>
-      <div class="link-wrapper">
-        <div>
-          <a href="#about">About</a>
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="skill-card">
+                    <i class="fab fa-html5 fa-3x" style="color: #e34c26; margin-bottom: 1rem;"></i>
+                    <h3>HTML5</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt fa-3x" style="color: #264de4; margin-bottom: 1rem;"></i>
+                    <h3>CSS3</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js fa-3x" style="color: #f7df1e; margin-bottom: 1rem;"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js fa-3x" style="color: #f7df1e; margin-bottom: 1rem;"></i>
+                    <h3>Tailwind CSS</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-react fa-3x" style="color: #61dbfb; margin-bottom: 1rem;"></i>
+                    <h3>React JS</h3>
+                </div>
+                
+                <!-- Backend/Tools -->
+                <div class="skill-card">
+                    <i class="fab fa-node fa-3x" style="color: #3c873a; margin-bottom: 1rem;"></i>
+                    <h3>Node.js</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-node fa-3x" style="color: #3c873a; margin-bottom: 1rem;"></i>
+                    <h3>Express JS</h3>
+                </div>
+                 <div class="skill-card">
+                    <i class="fab fa-git-alt fa-3x" style="color: #f05032; margin-bottom: 1rem;"></i>
+                    <h3>Git/GitHub</h3>
+                </div>
+                 <div class="skill-card">
+                    <i class="fas fa-database fa-3x" style="color: #00758f; margin-bottom: 1rem;"></i>
+                    <h3>Postgre SQL</h3>
+                </div>
+                 <div class="skill-card">
+                    <i class="fab fa-docker fa-3x" style="color: #2496ed; margin-bottom: 1rem;"></i>
+                    <h3>C++</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-docker fa-3x" style="color: #2496ed; margin-bottom: 1rem;"></i>
+                    <h3>JAVA</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-docker fa-3x" style="color: #2496ed; margin-bottom: 1rem;"></i>
+                    <h3>PYTHON</h3>
+                </div>
+                
+            </div>
         </div>
-        <div>
-          <a href="#projects">Projects</a>
-        </div>
-        <div>
-          <a href="#skills">Skills</a>
-        </div>
-        <div>
-          <a href="#contactme">Contact Me</a>
-        </div>
-      </div>
+    </section>
 
-      <div class="icon-wrapper">
-        <i class="fa-brands fa-linkedin icon"></i>
-        <i class="fa-brands fa-github icon"></i>
-        <i class="fa-brands fa-twitter icon"></i>
-        <i class="fa-brands fa-instagram icon"></i>
-        <i class="fa-regular fa-envelope icon"></i>
-      </div>
-    </div>
-  </footer>
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <p class="section-subtitle">Some of my recent work</p>
 
-<!-- Javascript Logic -->
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
-  <script>
-    var typeData = new Typed(".role", {
-      strings: [
-        "B.Tech Student",
-        "Web Developer",
-        "Designer",
-        "Frontend Developer",
-        "Coder",
-      ],
-      loop: true,
-      typeSpeed: 100,
-      backSpeed: 80,
-      backDelay: 1000,
-    });
-  </script>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <div class="project-img">
+                        <img src="assets/project1bg_optimized.jpg" alt="Travel Planner Website" loading="lazy">
+                        <div class="project-overlay">
+                             <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3 class="project-title">Blog-app</h3>
+                            <div class="project-links">
+                                <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <p class="project-desc">
+                            A full stack blog app with features like authentication, authorization, CRUD operations, etc. and deploy using render and netlify.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React.js</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express.js</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <div class="project-img">
+                        <img src="assets/project2bg_optimized.jpg" alt="Course Platform" loading="lazy">
+                        <div class="project-overlay">
+                             <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3 class="project-title">Agri-Assist</h3>
+                            <div class="project-links">
+                                <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <p class="project-desc">
+                            A full stack web app for farmers to get information about crops, weather, etc. 
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Flask api</span>
+                            <span class="tag">ML Model</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container contact-container">
+            <h2 class="section-title">Contact Me</h2>
+            <p class="section-subtitle">Have a project in mind? Let's talk.</p>
+
+            <form action="https://formspree.io/f/xgolzznl" method="POST" class="contact-form">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Describe your project or just say hi..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">
+                    Send Message <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:email@example.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="copyright">
+                &copy; 2025 Mayur Bambale. All Rights Reserved.
+            </p>
+            <p style="font-size: 0.8rem; margin-top: 10px; color: var(--text-secondary);">
+                Built with <i class="fas fa-heart" style="color: var(--accent-color);"></i> and Code.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
